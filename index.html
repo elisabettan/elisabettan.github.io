@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -37,10 +37,27 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 
 			<div class="slides">
+
 			    <section>
-			        <h1>
-				    	<img style="width: 495.279px; height: 495.279px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/elisabettan/images/242841/ABBA_-_The_Album__Polar_.jpg">
-					</h1>
+			    	<a href="#">
+			    		<img style="width: 495.279px; height: 495.279px; max-height: none; max-width: none;"
+			    			src="https://s3.amazonaws.com/media-p.slid.es/uploads/elisabettan/images/242841/ABBA_-_The_Album__Polar_.jpg" id="minbild">
+			    	</a>
+			    	<div class="popup" id="pop" style="visibility:hidden;">
+			    		textrutan
+			    	</div>
+					
+					<script>
+			    		document.getElementById("minbild").onclick = function() {
+			    			var popup = document.getElementById("pop");
+			    			if(popup.style.visibility == "hidden"){
+			    				popup.style.visibility="visible";
+			    			} else {
+			    				popup.style.visibility = "hidden";
+
+			    			}
+			    		}
+			    	</script>
 				</section>
 
 				<section>
